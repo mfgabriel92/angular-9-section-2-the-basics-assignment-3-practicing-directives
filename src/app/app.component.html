@@ -1,0 +1,12 @@
+<button (click)="onClick()">Display Details</button>
+<p [ngStyle]="{ display: !showDetails ? 'none' : 'block' }">
+  Lorem ipsum dolor sit amet
+</p>
+<ul>
+  <li
+    *ngFor="let date of dates; let i = index"
+    [ngStyle]="{ backgroundColor: i >= 4 ? 'blue' : 'transparent' }"
+  >
+    {{ date }}
+  </li>
+</ul>
